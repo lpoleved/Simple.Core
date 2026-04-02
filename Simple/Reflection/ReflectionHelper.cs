@@ -800,6 +800,11 @@ namespace Simple
 			return FindTopInheritedTypeInAssembly(assemblies, typeof(T));
 		}
 
+		public static Type FindTopInheritedTypeInAssembly<T>(Assembly assembly)
+		{
+			return FindTopInheritedTypeInAssembly(new Assembly[] { assembly }, typeof(T));
+		}
+
 		public static Type FindTopInheritedTypeInAssembly<T>(IEnumerable<Assembly> assemblies)
 		{
 			return FindTopInheritedTypeInAssembly(assemblies, typeof(T));
