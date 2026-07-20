@@ -247,7 +247,7 @@ namespace Simple.Modeling
 		public AccessModifier SetAccessModifier { get; set; } = AccessModifier.Public;
 		//public bool FirePropertyValueChangeEvent { get; set; } = true;
 		//public bool AddOrRemoveInChangedProperties { get; set; } = true;
-		public bool TrimStringBeforeComparison { get; set; } = true;
+		public bool TrimStringBeforeComparison { get; set; } // = true;
 
 		public bool AutoGenerateProperty { get; set; } = true;
 		public object? DefaultValue { get; set; }
